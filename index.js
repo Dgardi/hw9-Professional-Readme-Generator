@@ -69,7 +69,7 @@ inquirer
 .prompt(questions)
 
 .then((data) => {
-    const filename = `readme.txt`;
+    const filename = `readme.md`;
 
     fs.appendFile(filename,  JSON.stringify(data, null, '\t'), (err) =>
       err ? console.log(err) : console.log("You've created a readme!")
