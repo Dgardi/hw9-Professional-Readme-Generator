@@ -1,0 +1,11 @@
+{
+	"github": "Dgardi",
+	"email": "dgardi@gmail.com",
+	"projectname": "hw-9-professional-readme-generator",
+	"description": "This project was created to make a templated readme that would set a standard for all of my readme documents across all projects.",
+	"licensetype": "None",
+	"dependencies": "npm install inquirer",
+	"test": "n/a",
+	"fyi": "This repo is free to be forked/copied.",
+	"fyicontribute": "n/a"
+}
