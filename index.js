@@ -53,27 +53,33 @@ const questions = [
         type: "input",
         name: "fyicontribute",
         message: "What does the user need to know about contributing to the repo?",
-    }
+    },
+
 
 
 ];
 
+
 // TODO: Create a function to write README file
+//Ref. activity 9.20 (Stu_Inquirer)
+
+// fs.appendfile creates a file if one is not there, otherwise I would have used fs.writetofile. 
+
 inquirer
 .prompt(questions)
 
 .then((data) => {
     const filename = `readme.txt`;
 
-    fs.writeFile(filename, JSON.stringify(data, null, '\t'), (err) =>
-      err ? console.log(err) : console.log('Success!')
+    fs.appendFile(filename,  JSON.stringify(data, null, '\t'), (err) =>
+      err ? console.log(err) : console.log("You've created a readme!")
     );
   });
 
 
 
-// // TODO: Create a function to initialize app
-function init() {}
+// // // TODO: Create a function to initialize app
+// function init() {}
 
-// // Function call to initialize app
-// init();
+// // // Function call to initialize app
+// // init();
